@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+}
+
+header {
+    width: 100vw;
+    background-color: #EAC926;
+}
+
+.logo-buscador-frase{
+    text-align: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-top: auto;
+
+}
+#logo {
+    display: inline-block;
+    width: 40%;
+    margin-left: 5vw;
+    margin-top: 20px;
+}
+
+
+
+.barraBusqueda{
+    display: inline-block;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 5vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+#buscador{
+    display: inline;
+    width: 20vh;
+    font-size: 14px;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border: none
+}
+
+.fa-search{
+    display: inline;
+    padding-left: 10px;
+    color: #666;
+    border-left: #ebebeb solid 1px;
+}
+
+
+
+
+
+
+.textoBajada{
+    display: inline-block;
+    width: 90vw;
+    margin: 10px;
+}
+
+.burger-menu{
+    display: inline-block;
+    color: white;
+    background-color: #1259c3;
+    width: 40px;
+    padding: 10px 12px ;
+    border-radius: 2px;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+}
+
+#btn-menu{
+    display: none;
+}
+
+#btn-menu:checked ~ .menu{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:flex-start
+}
+
+.menu{
+    font-size: 12px;
+    width: 90vw;
+    margin-top: 10px;
+    display: none;
+    background-color: #EAC926;
+    width: 100vw;
+}
+
+
+.menu ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    list-style: none;
+    padding: 15;
+    flex-direction: column;
+}
+
+.menu li a{
+    margin: 10px 15px;
+    padding: 0px;
+    color: #666;
+    text-decoration: none;
+    transition: width 10s;
+}
+
+.menu li:hover{
+    background-color: #EAC926;
+    cursor: pointer;
+}
+
+
+/*------------------------------*/
+
+
+main{
+    background-color: #ebebeb;
+    width: 100vw;
+}
+
+
+.banner{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+
+.titulares{
+    width: 100%;
+    font-size: 24px;
+    color: #666;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0em;
+}
+
+.ultimavisita, .ofertas{
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.producto{
+    max-width: 95vw;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;    
+}
+
+.productoImagen{
+    width: 90%;
+    border-radius: 5px;
+}
+
+.producto img{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.productoDetalle{
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.producto i{  
+    position: relative;
+    background-color: white;
+    right: -83%;
+    top: 17px;
+    font-size: 16px;
+    color: #39b54a;
+    padding: 10px 7px 9px 8px;
+    width: 35;
+    height: 30;
+    border-radius: 50%;
+    border: solid 1px;
+}
+
+.producto h3{
+    display: inline-block;
+    font-size: 18px;
+    color: #666;
+}
+
+.producto h4{
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.producto p{
+    display: none;
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+/*------------------------------*/
+
+
+
+.ofertas{
+    background-color: #ebebeb;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+
+/*------------------------------*/
+
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: 14px;
+    background-color: white;
+    color: #666;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer section{
+    width: 90vw;
+    margin-bottom: 60px;
+}
+
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+    background-color: white;
+}
+
+footer h4{
+    font-size: 18px;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+footer p{
+    font-size: 16px;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+.registro-ppal{
+    color: #666;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+}
+.titulares-h2{
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+}
+.form-section{
+    width: 100%;
+    font-size: 1em;
+    padding-top: 1em;
+    width: 80%;
+}
+
+.login-field{
+    width: 90vw;
+    border: none;
+    padding: 1em;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+.registro-ppal h3{
+    font-size: 16px;
+    padding-top: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+.perfil-usuario h3{
+    padding-bottom: 1em;
+}
+
+.perfil-usuario{
+    padding-top: 1em;
+}
+
+.perfil-usuario p{
+    font-size: 0.6em;
+}
+
+.perfil-usuario label{
+    padding: 1.2em;
+    text-align: center;
+}
+
+.intereses{
+    padding-top: 1em;
+}
+
+.intereses label{
+    display: block;
+    padding: 1.2em;
+    padding-top: 1.2em;
+    
+}
+
+
+
+.registro-ppal button {
+    display: inline-block;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    padding: 1em;
+    background-color: #1259c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.login{
+    color: #666;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+}
+
+.login-botones button {
+    display: inline-block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    background-color: #1259c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px){
+
+    .textoBajada{
+        width: 30vw;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .menu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        background-color: #EAC926;
+    }
+
+    .menu ul{
+        flex-flow: row wrap;
+    }
+
+
+    .producto{
+        width: 48%;
+        margin-bottom: 2vw;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+
+    .producto p{
+        display: block;
+        margin-top: 0.6em;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .producto{
+        width: 21vw;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    footer section{
+        margin: 1.2vw;
+        width: 24vw;
+    }
+    .copyright{
+        width: 100%;
+    }
+    
+}
