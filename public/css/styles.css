@@ -16,7 +16,6 @@ header {
 
 .logo-buscador-frase{
     text-align: center;
-    width: 90vw;
     margin-left: auto;
     margin-top: auto;
 
@@ -393,6 +392,7 @@ footer p{
         width: 90vw;
         display: flex;
         flex-flow: row wrap;
+        padding-bottom: 1.5em;
         justify-content: space-between;
         background-color: #EAC926;
     }
