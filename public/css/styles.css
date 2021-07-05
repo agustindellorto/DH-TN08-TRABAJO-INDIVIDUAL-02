@@ -11,27 +11,32 @@ body{
 
 header {
     width: 100vw;
+    text-align: center;
     background-color: #EAC926;
 }
 
 .logo-buscador-frase{
-    text-align: center;
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 20px;
     margin-left: auto;
-    margin-top: auto;
+    margin-right: auto;
 
 }
+
 #logo {
-    display: inline-block;
-    width: 40%;
-    margin-left: 5vw;
-    margin-top: 20px;
+    cursor: pointer;
+    width: 30%;
+    max-width: 230px;
 }
 
 
 
 .barraBusqueda{
-    display: inline-block;
-    text-align: left;
+    width: 50%;
     margin-left: 15px;
     margin-right: 5vw;
     background-color: rgb(255, 255, 255);
@@ -39,16 +44,17 @@ header {
 }
 
 #buscador{
-    display: inline;
-    width: 20vh;
-    font-size: 14px;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    position: relative;
+    width: 75%;
+    font-size: 18px;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     border: none
 }
 
 .fa-search{
-    display: inline;
+    text-align: right;
+    display: inline-block;
     padding-left: 10px;
     color: #666;
     border-left: #ebebeb solid 1px;
@@ -57,15 +63,15 @@ header {
 
 
 
-
-
 .textoBajada{
     display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
     width: 90vw;
-    margin: 10px;
 }
 
 .burger-menu{
+    cursor: pointer;
     display: inline-block;
     color: white;
     background-color: #1259c3;
@@ -87,34 +93,34 @@ header {
 }
 
 .menu{
-    font-size: 12px;
+    font-size: 18px;
     width: 90vw;
-    margin-top: 10px;
     display: none;
     background-color: #EAC926;
     width: 100vw;
+    padding-top: 10px;
 }
 
 
 .menu ul{
     display: flex;
-    justify-content: flex-start;
-    margin-top: 15px;
+    flex-flow: row wrap;
+    justify-content: space-between;
     list-style: none;
-    padding: 15;
     flex-direction: column;
 }
 
 .menu li a{
-    margin: 10px 15px;
-    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
     color: #666;
     text-decoration: none;
     transition: width 10s;
 }
 
 .menu li:hover{
-    background-color: #EAC926;
+    background-color: #ebebeb;
     cursor: pointer;
 }
 
@@ -239,7 +245,6 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    font-size: 14px;
     background-color: white;
     color: #666;
     text-align: center;
@@ -253,23 +258,29 @@ footer section{
 
 footer i{
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #1259c3;
     background-color: white;
 }
 
 footer h4{
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 0rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
 }
 
 footer p{
-    font-size: 16px;
-    margin-top: 0rem;
+    font-size: 14px;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: 0.8rem;
-    text-align: center;
+}
+
+#copyright{
+    padding-top: 20px;
+}
+
+footer i:hover{
+    color: #666;
 }
 
 
@@ -327,7 +338,7 @@ footer p{
 }
 
 .intereses label{
-    display: block;
+    display: inline-block;
     padding: 1.2em;
     padding-top: 1.2em;
     
@@ -378,8 +389,11 @@ footer p{
 
 @media (min-width: 769px){
 
+    .barraBusqueda{
+        width: 30%;
+    }
     .textoBajada{
-        width: 30vw;
+        width: 20%;
     }
 
     .burger-menu{
@@ -387,14 +401,17 @@ footer p{
     }
 
     .menu{
+        font-size: 15px;
         margin-left: auto;
         margin-right: auto;
         width: 90vw;
         display: flex;
         flex-flow: row wrap;
+        padding-top: 20px;
         padding-bottom: 1.5em;
         justify-content: space-between;
         background-color: #EAC926;
+        color: #ebebeb;
     }
 
     .menu ul{
@@ -416,6 +433,14 @@ footer p{
 }
 
 @media (min-width: 1280px) {
+    .menu{
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .textoBajada{
+        font-size: 18px;
+    }
 
     .producto{
         width: 21vw;
