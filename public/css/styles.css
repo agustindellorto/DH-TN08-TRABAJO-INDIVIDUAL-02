@@ -36,26 +36,28 @@ header {
 
 
 .barraBusqueda{
-    width: 50%;
+    flex: auto;
     margin-left: 15px;
-    margin-right: 5vw;
+    margin-right: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
 }
 
 #buscador{
-    position: relative;
-    width: 75%;
+    width: 90%;
     font-size: 18px;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
     border: none
 }
 
 .fa-search{
-    text-align: right;
-    display: inline-block;
+    width: auto;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 10px;
+    margin-right: 10px;
     color: #666;
     border-left: #ebebeb solid 1px;
 }
@@ -139,6 +141,12 @@ main{
     padding: 0;
     margin: 0;
 }
+.banner img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 
 
 .titulares{
@@ -389,9 +397,6 @@ footer i:hover{
 
 @media (min-width: 769px){
 
-    .barraBusqueda{
-        width: 30%;
-    }
     .textoBajada{
         width: 20%;
     }
@@ -420,8 +425,8 @@ footer i:hover{
 
 
     .producto{
-        width: 48%;
-        margin-bottom: 2vw;
+        width: calc((100% /2 - 20px));
+        margin-bottom: 30px;
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 
@@ -437,13 +442,11 @@ footer i:hover{
         padding-top: 20px;
         font-size: 18px;
     }
-
     .textoBajada{
         font-size: 18px;
     }
-
     .producto{
-        width: 21vw;
+        width: calc((100% /4 - 20px));
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
     footer section{
@@ -453,5 +456,4 @@ footer i:hover{
     .copyright{
         width: 100%;
     }
-    
 }
